@@ -8,8 +8,8 @@ def index(request):
     products = Product.objects.all()
     return render(request, 'products/index.html', {'products':products})
 
-def detail(request, product_id):
-    return HttpResponse(product_id)
+# def detail(request, product_id):
+#     return HttpResponse(product_id)
     
 
 # def Newarrival_views(request):
