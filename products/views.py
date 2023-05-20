@@ -4,9 +4,12 @@ from .models import Product, NewArrival
 # Offer, 
 # Create your views here.
 
-def index(request):
+def products(request):
     products = Product.objects.all()
-    return render(request, 'products/index.html', {'products':products})
+    return render(request, 'products.html', {'products':products})
+
+def home(request):
+    return render(request, 'home.html')
 
 # def detail(request, product_id):
 #     return HttpResponse(product_id)
