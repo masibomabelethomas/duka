@@ -21,10 +21,30 @@
         <span class="navbar-brand mb-0 h1">Karibu Sana chagua matunda uyapendayo</span>
       </div>
   </nav>
+<!-- authentication page -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'login' %}">Login</a>
+    </div>
+  </nav>
+  
 
   <div class="container"> 
+
+    {% if messages %}
+
+      {% for message in messages %}
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+        
+
+    {% endfor %}
+    {% endif %}
+
       {% block content %}
-      
+
       {% endblock %}
   </div>
 
