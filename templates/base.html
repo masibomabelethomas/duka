@@ -22,12 +22,21 @@
       </div>
   </nav>
 <!-- authentication page -->
+
+{% if user.is_authenticated %}
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'logout' %}">Logout</a>
+    </div>
+  </nav>
+  {% else %}
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'login' %}">Login</a>
     </div>
   </nav>
-  
+  {% endif %}
 
   <div class="container"> 
 
