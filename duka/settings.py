@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products.apps.ProductsConfig',
     'api.apps.ApiConfig',
+    # 'django.contrib.auth',
     'Auth_App',
 ]
 

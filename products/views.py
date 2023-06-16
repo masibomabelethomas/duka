@@ -1,13 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Product, NewArrival
-# Offer, 
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
+# @login_required
 def products(request):
     products = Product.objects.all()
     return render(request, 'products.html', {'products':products})
 
+# @login_required
 def home(request):
     return render(request, 'home.html')
 
