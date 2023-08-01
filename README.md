@@ -39,7 +39,7 @@ License
 Duka is open-source software licensed under the MIT License. Feel free to use, modify, and distribute the code as per the license terms.
 
 Feedback and Support
-If you have any questions, feedback, or encounter issues with Duka, please feel free to reach out to us through the issues section of this repository or contact us via email at contact@duka.com.
+If you have any questions, feedback, or encounter issues with Duka, please feel free to reach out to us through the issues section of this repository or contact us via email at masibomabele2015@gmail.com.
 
 Thank you for using Duka, and happy shopping! 🛍️
 
